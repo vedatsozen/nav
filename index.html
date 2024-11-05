@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SİTE 4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<nav class="w-48 h-full fixed left-0 top-0 flex flex-col justify-center items-center gap-24">
+<a href="#header" class="firsta"></a>
+<a href="#section1"></a>
+<a href="#section2"></a>
+</nav>
+
+<header id="header">
+    <h1>Hero Section</h1>
+</header>
+<section id="section1">
+    <h1>Section 1</h1>
+</section>
+<section id="section2">
+    <h1>Section 2</h1>
+</section>
+
+</body>
+
+<script>
+
+$(document).ready(function() {
+
+$(".firsta").addClass("clickedbtn");
+
+$("a").click(function() {
+$("a").removeClass("clickedbtn");
+$(this).addClass("clickedbtn");
+});
+
+})    
+
+
+</script>
+
+</html>
